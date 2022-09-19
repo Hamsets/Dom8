@@ -1,12 +1,12 @@
 public final class Person {
     private String firstName;
     private String lastName;
-    private String Gender;
+    private Gender gender;
 
-    public Person (String firstName, String lastName, String Gender) {
+    public Person (String firstName, String lastName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.Gender= Gender;
+        this.gender= gender;
     }
 
     @Override
@@ -32,6 +32,6 @@ public final class Person {
 
     @Override
     public String toString () {
-        return this.firstName +"_"+ this.lastName +"_"+ this.Gender;
+        return this.firstName +"_"+ this.lastName +"_"+ this.gender;
     }
 }
